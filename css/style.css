@@ -6,7 +6,7 @@
     box-sizing: border-box;
 }
 body {
-    background-color: #aaa;
+    background-color: #ccc;
     text-align: center;
 }
 li {
@@ -15,11 +15,19 @@ li {
 a {
     text-decoration: none;
 }
+button {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background: transparent;
+    font-size: 18px;
+}
 .list {
     width: 400px;
     margin: 0 auto;
-    background-color: #eee;
     border-radius: 10px;
+    -webkit-box-shadow: 10px 10px 10px -5px rgba(0,0,0,0.8); 
+    box-shadow: 10px 10px 10px -5px rgba(0,0,0,0.8);
 }
 header {
     background: #03AB00;
@@ -45,23 +53,26 @@ header {
 }
 .workout {
     padding: 0;
-    background-color: #fff;
+    background-color: #eee;
     height: 500px;
     overflow-y: auto;
 }
-.types {
-    
-}
-.type {
+.item {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
     padding: 10px 20px;
 }
-.name {}
 .del {
-    border: none;
-    background-color: rgba(0, 0, 0, 0);
+    transition: 0.2s;
+}
+.del:hover {
+    color: #03AB00;
+}
+.divider {
+    width: 95%;
+    margin: auto;
+    border-bottom: 1px solid #ccc;
 }
 .footer {
     background: #03AB00;
@@ -72,8 +83,22 @@ header {
     display: flex;
     flex-direction: column;
 }
-.add {
+.footer_input {
+    height: 42px;
     border: none;
-    background-color: rgba(0, 0, 0, 0);
-    font-size: 24px;
+    font-size: 16px;
+    padding: 0 16px;
+}
+.add {
+    width: 48px;
+    height: 48px;
+    margin: auto;
+    font-size: 48px;
+    line-height: 48px;
+}
+.add i {
+    transition: 0.3s;
+}
+.add:hover i {
+    color: #fff;
 }
