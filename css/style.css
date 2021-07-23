@@ -1,2 +1,79 @@
 @charset "utf-8";
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #aaa;
+    text-align: center;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+.list {
+    width: 400px;
+    margin: 0 auto;
+    background-color: #eee;
+    border-radius: 10px;
+}
+header {
+    background: #03AB00;
+    background: -moz-linear-gradient(left, #03AB00 0%, #E0E0E0 100%, #009911 100%);
+    background: -webkit-linear-gradient(left, #03AB00 0%, #E0E0E0 100%, #009911 100%);
+    background: linear-gradient(to right, #03AB00 0%, #E0E0E0 100%, #009911 100%);
+    border-radius: 10px 10px 0 0;
+}
+.logo {
+    display: flex;
+    justify-content: center;
+}
+.logo i {
+    font-size: 24px;
+    color: rgb(255, 0, 0);
+    padding-top: 3px;
+    margin-right: 10px;
+}
+.title {
+    font-size: 24px;
+    font-family: 'Luckiest Guy', cursive;
+    margin: 0;
+}
+.workout {
+    padding: 0;
+    background-color: #fff;
+    height: 500px;
+    overflow-y: auto;
+}
+.types {
+    
+}
+.type {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+.name {}
+.del {
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+}
+.footer {
+    background: #03AB00;
+    background: -moz-linear-gradient(left, #03AB00 0%, #E0E0E0 0%, #009911 100%);
+    background: -webkit-linear-gradient(left, #03AB00 0%, #E0E0E0 0%, #009911 100%);
+    background: linear-gradient(to right, #03AB00 0%, #E0E0E0 0%, #009911 100%);
+    border-radius: 0 0 10px 10px;
+    display: flex;
+    flex-direction: column;
+}
+.add {
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 24px;
+}

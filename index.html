@@ -4,11 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/6584921572.js" crossorigin="anonymous"></script>
     <script defer src="js/main.js"></script>
-    <title>Workout list</title>
+    <title>Workout List</title>
 </head>
 <body>
-    
+    <section class="list">
+        <header class="header">
+            <div class="logo">
+                <i class="fas fa-dumbbell"></i>
+                <h1 class="title">Workout List</h1>
+            </div>
+        </header>
+        <ul class="workout">
+            <li class="types">
+                <div class="type">
+                    <span class="name">
+                        벤치 프레스
+                    </span>
+                    <button class="del">
+                        <i class="fas fa-trash-alt"></i>
+                    </button>
+                </div>
+            </li>
+        </ul>
+        <footer class="footer">
+            <input type="text" class="footer_input">
+            <button class="add">
+                <i class="fas fa-plus-circle"></i>
+            </button>
+        </footer>
+    </section>
 </body>
 </html>
