@@ -13,6 +13,10 @@ function onAdd() {
     // 1. 사용자가 input에 입력한 텍스트를 받고
     const text = input.value;
     console.log(text);
+    if(text === "") {
+        input.focus();
+        return;
+    }
 
     // 2. 새로운 아이템을 만듦 ( 텍스트와 삭제 버튼 같이)
     const item = creatItem(text); // text를 받았으니
@@ -56,5 +60,10 @@ function creatItem(text) {
 }
 
 addBtn.addEventListener("click", () => {
+    onAdd();
+});
+
+input.addEventListener("keypress", () => {
+    console.log("enter");
     onAdd();
 });
