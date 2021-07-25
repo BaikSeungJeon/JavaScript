@@ -12,14 +12,14 @@ const addBtn = document.querySelector(".add");
 function onAdd() {
     // 1. 사용자가 input에 입력한 텍스트를 받고
     const text = input.value;
-    console.log(text);
+    console.log(text);to
     if(text === "") {
         input.focus();
         return;
     }
 
     // 2. 새로운 아이템을 만듦 ( 텍스트와 삭제 버튼 같이)
-    const item = creatItem(text); // text를 받았으니
+    const item = createItem(text); // text를 받았으니
 
     // 3. 새로 만든 아이템을 workout에 추가 하면서,
     workout.appendChild(item); // workout 안에 item을 자식으로서 추가하는
@@ -29,7 +29,7 @@ function onAdd() {
     input.focus();
 }
 
-function creatItem(text) {
+function createItem(text) {
     const itemRow = document.createElement("li");
     itemRow.setAttribute("class", "items");
 
