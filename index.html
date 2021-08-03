@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scroll</title>
+    <style>
+      body {
+        background-color: black;
+        text-align: center;
+        
+      }
+      .btn {
+        width: 200px;
+        height: 50px;
+        font-size: 30px;
+        color: white;
+        text-align: center;
+        background-color: tomato;
+        border: none;
+        border-radius: 2px;
+        margin: 16px 0;
+        cursor: pointer;
+      }
+      .btn:hover {
+        background-color: orangered;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="btn">Find a rabbit</button>
+    <img src="img/carrot.png" alt="carrot">
+    <img src="img/carrot.png" alt="carrot">
+    <img src="img/carrot.png" alt="carrot">
+    <img src="img/carrot.png" alt="carrot">
+    <img src="img/carrot.png" alt="carrot">
+    <img src="img/carrot.png" alt="carrot">
+    <img src="img/carrot.png" alt="carrot">
+    <img src="img/carrot.png" alt="carrot">
+    <img src="img/carrot.png" alt="carrot">
+    <img src="img/carrot.png" alt="carrot">
+    <img class="rabbit" src="img/rabbit.png" alt="rabbit">
+    <img src="img/carrot.png" alt="carrot">
+    <img src="img/carrot.png" alt="carrot">
+    <img src="img/carrot.png" alt="carrot">
+    <img src="img/carrot.png" alt="carrot">
+    <img src="img/carrot.png" alt="carrot">
+    <img src="img/carrot.png" alt="carrot">
+    <img src="img/carrot.png" alt="carrot">
+    <img src="img/carrot.png" alt="carrot">
+    <img src="img/carrot.png" alt="carrot">
+
+    <script>
+      const button = document.querySelector(".btn");
+      const rabbit = document.querySelector(".rabbit");
+      button.addEventListener("click", () => {
+        rabbit.scrollIntoView({behavior : "smooth", block : "center"});
+        // scrollIntoView : 속성이 세 가지가 있음. 행동을 지정해줄 수 있고(bahavior), 원래 기본값은 auto인데,
+        // 부드럽게 smooth가 되게 할 수도 있고, 그 외에 block, inline과 관련된 속성값들도 있다.
+      });
+    </script>
+  </body>
+</html>
