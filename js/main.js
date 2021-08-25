@@ -64,6 +64,10 @@ addBtn.addEventListener("click", () => {
 });
 
 input.addEventListener("keypress", () => {
-    console.log("enter");
-    onAdd();
+    if (window.event.keyCode == 13) {
+        // enter 번호인 13일 때에만 동작하도록 실행
+        // 기존 spacebar나 숫자 입력 시 입력 되는 것을 방지
+        console.log("enter");
+        onAdd();
+    }
 });
