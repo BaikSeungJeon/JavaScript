@@ -2,25 +2,44 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="refresh" content="7; url=https://naver.com">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="images/kiwoom.png">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <title>키움증권 영웅문 글로벌</title>
 </head>
 <body>
     <div class="main">
-        <ul class="gnb">
-            <li>
-                <span> 1. </span>
-                이 프로젝트는 리액트를 사용해 키움증권 MTS를 클론코딩 한 프로젝트입니다.
+        <div class="content">
+            이 프로젝트는 리액트를 사용해<br>
+            증권사 모바일 앱 화면을 구현한 저의 첫 프로젝트입니다.<br><br>
 
-                현재 프로젝트는 모바일 앱 화면을 구현했기 때문에,
-                개발자 도구(F12)를 여시고 토글 디바이스 툴바를 클릭하시면 더욱 편하게 감상하실 수 있습니다.
-            </li>
-            <li></li>
-            <li></li>
-        </ul>
+            모바일 앱 화면을 보고 구현했기에, 화면이 이동하면<br>
+            <span>개발자 도구</span>를 열어주신 후에, 상단에 <span>Toggle device toolbar</span>를 클릭해 주시면<br>
+            더욱 접근성 좋은 프로젝트를 감상하실 수 있습니다.
+
+            <div class="count">
+                이 화면은 <span class="number">7</span>초 후에 다음 화면으로 넘어갑니다.
+            </div>
+        </div>
+        
     </div>
+
+    <script>
+        let num = 7;
+        let counter = setInterval(timer, 1000);
+
+        function timer() {
+            num--;
+
+            if (num < 0) {
+                clearInterval(counter);
+                return;
+            }
+            document.querySelector(".number").innerHTML = num;
+        }
+    </script>
 </body>
 </html>
