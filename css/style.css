@@ -2,7 +2,7 @@
 
 /* pc 1024px ~ 1480px */
 section .inner {
-    width: 1480px;
+    max-width: 1480px;
     margin: 0 auto;
 }
 .profile-title {
@@ -12,7 +12,6 @@ section .inner {
 .profile-content {
     display: flex;
     flex-flow: row nowrap;
-    justify-content: center;
 }
 .profile-img {
     width: 30%;
@@ -22,7 +21,7 @@ section .inner {
 }
 .profile-txt {
     width: 70%;
-    font-size: 32px;
+    font-size: 32px
 }
 .hobby-title {
     text-align: center;
@@ -45,9 +44,75 @@ section .inner {
 
 /* 태블릿  761px ~ 1023px */
 @media screen and (max-width : 1023px) {
-    
+    .profile {
+        margin-bottom: 100px;
+    }
+    .profile-title {
+        font-size: 32px;
+        margin-bottom: 50px;
+    }
+    .profile-content {
+        display: flex;
+        flex-direction: column;
+    }
+    .profile-img {
+        width: 50%;
+        margin: 0 auto;
+    }
+    .profile-img img {
+        width: 100%;
+    }
+    .profile-txt {
+        width: 70%;
+        font-size: 24px;
+        margin: 0 auto;
+    }
+    .hobby {
+        margin-bottom: 100px;
+    }
+    .hobby-title {
+        font-size: 32px;
+        margin-bottom: 50px;
+    }
+    .hobby-content {
+        display: flex;
+        flex-direction: column;
+    }
+    .hobby-img {
+        width: 50%;
+        margin: 0 auto;
+    }
+    .hobby-img img {
+        width: 100%;
+    }
+    .hobby-txt {
+        width: 70%;
+        font-size: 24px;
+        margin: 0 auto;
+    }
 }
-/* 모바일 320px ~ 760px */
+
+/* 모바일 550px ~ 760px */
 @media screen and (max-width : 760px) {
-    
+    body {
+        min-width: 550px;
+    }
+    .gnb {
+        display: none;
+    }
+    .nav-btn {
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+    }
+    .profile-txt {
+        width: 50%;
+        font-size: 16px;
+    }
+    .hobby-txt {
+        width: 50%;
+        font-size: 16px;
+    }
 }

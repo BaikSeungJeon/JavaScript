@@ -18,7 +18,7 @@ header {
     height: 100px;
 }
 header .inner {
-    width: 1480px;
+    max-width: 1480px;
     height: 100px;
     margin: 0 auto;
     position: relative;
@@ -35,6 +35,9 @@ header .inner {
 }
 .gnb ul li {
     margin: 10px;
+}
+.nav-btn {
+    display: none;
 }
 footer {
     height: 50px;
