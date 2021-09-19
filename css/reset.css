@@ -1,0 +1,44 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+body {
+    margin: 0 auto;
+}
+header {
+    height: 100px;
+}
+header .inner {
+    width: 1480px;
+    height: 100px;
+    margin: 0 auto;
+    position: relative;
+}
+.gnb {
+    z-index: 999;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.gnb ul {
+    display: flex;
+    flex-wrap: row nowrap;
+}
+.gnb ul li {
+    margin: 10px;
+}
+footer {
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    background-color: #ccc;
+}
