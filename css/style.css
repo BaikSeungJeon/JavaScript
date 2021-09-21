@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 /* pc 1024px ~ 1480px */
-section .inner {
+#sec1 .inner {
     max-width: 1480px;
     margin: 0 auto;
 }
@@ -21,7 +21,8 @@ section .inner {
 }
 .profile-txt {
     width: 70%;
-    font-size: 32px
+    font-size: 32px;
+    margin-left: 50px;
 }
 .hobby-title {
     text-align: center;
@@ -40,6 +41,7 @@ section .inner {
 .hobby-txt {
     width: 70%;
     font-size: 32px;
+    margin-left: 50px;
 }
 
 /* 태블릿  761px ~ 1023px */
@@ -94,19 +96,6 @@ section .inner {
 
 /* 모바일 550px ~ 760px */
 @media screen and (max-width : 760px) {
-    body {
-        min-width: 550px;
-    }
-    .gnb {
-        display: none;
-    }
-    .nav-btn {
-        display: block;
-        position: absolute;
-        top: 10px;
-        right: 10px;
-        cursor: pointer;
-    }
     .profile-txt {
         width: 50%;
         font-size: 16px;

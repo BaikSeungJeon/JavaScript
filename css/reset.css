@@ -45,3 +45,18 @@ footer {
     line-height: 50px;
     background-color: #ccc;
 }
+@media screen and (max-width : 760px) {
+    body {
+        min-width: 550px;
+    }
+    .gnb {
+        display: none;
+    }
+    .nav-btn {
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+    }
+}
