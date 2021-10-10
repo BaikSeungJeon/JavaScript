@@ -1,4 +1,3 @@
-# clonecoding-web
 사용 기술 : HTML5, CSS3, jQuery
 
 제작 기간 : 2021. 07. 17 ~ 2021. 07. 20
