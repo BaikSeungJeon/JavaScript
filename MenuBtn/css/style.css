@@ -1,0 +1,92 @@
+@charset "utf-8";
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Archivo Black', sans-serif;
+
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #333;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* 수직 중앙 정렬 */
+    background-color: #ccc;
+    padding: 8px 12px;
+}
+.navbar_logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+.navbar_logo i {
+    color: red;
+}
+.navbar_menu {
+    display: flex;
+    padding-left: 0; /* 왼쪽 내부 여백 없애줘서 진짜로 중앙 정렬 */
+}
+.navbar_menu li {
+    padding: 8px 12px;
+    transition: 0.1s;
+}
+.navbar_menu li:hover {
+    background-color: #fff;
+    border-radius: 10px;
+}
+.navbar_menu li a {
+    font-weight: bold;
+}
+.navbar_icons {
+    display: flex;
+}
+.navbar_icons li {
+    padding: 8px 12px;
+}
+.navbar_icons li i {
+    font-size: 24px;
+}
+.navbar_toggleBtn {
+    position: absolute;
+    top: 15px;
+    right: 32px;
+    font-size: 24px;
+    display: none;
+}
+
+@media screen and (max-width: 760px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 8px 12px;
+    }
+    .navbar_menu {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .navbar_menu li {
+        width: 100%;
+        text-align: center;
+    }
+    .navbar_icons {
+        display: none;
+        justify-content: center;
+        width: 100%;
+        padding: 0;
+    }
+    .navbar_toggleBtn {
+        display: block;
+    }
+
+    .navbar_menu.active, .navbar_icons.active {
+        display: flex;
+    }
+}
