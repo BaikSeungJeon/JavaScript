@@ -1,0 +1,107 @@
+@charset "utf-8";
+
+/* pc 1024px ~ 1480px */
+#sec1 .inner {
+    max-width: 1480px;
+    margin: 0 auto;
+}
+.profile-title {
+    text-align: center;
+    font-size: 48px;
+}
+.profile-content {
+    display: flex;
+    flex-flow: row nowrap;
+}
+.profile-img {
+    width: 30%;
+}
+.profile-img img {
+    width: 100%;
+}
+.profile-txt {
+    width: 70%;
+    font-size: 32px;
+    margin-left: 50px;
+}
+.hobby-title {
+    text-align: center;
+    font-size: 48px;
+}
+.hobby-content {
+    display: flex;
+    flex-flow: row nowrap;
+}
+.hobby-img {
+    width: 30%;
+}
+.hobby-img img {
+    width: 100%;
+}
+.hobby-txt {
+    width: 70%;
+    font-size: 32px;
+    margin-left: 50px;
+}
+
+/* 태블릿  761px ~ 1023px */
+@media screen and (max-width : 1023px) {
+    .profile {
+        margin-bottom: 100px;
+    }
+    .profile-title {
+        font-size: 32px;
+        margin-bottom: 50px;
+    }
+    .profile-content {
+        display: flex;
+        flex-direction: column;
+    }
+    .profile-img {
+        width: 50%;
+        margin: 0 auto;
+    }
+    .profile-img img {
+        width: 100%;
+    }
+    .profile-txt {
+        width: 70%;
+        font-size: 24px;
+        margin: 0 auto;
+    }
+    .hobby {
+        margin-bottom: 100px;
+    }
+    .hobby-title {
+        font-size: 32px;
+        margin-bottom: 50px;
+    }
+    .hobby-content {
+        display: flex;
+        flex-direction: column;
+    }
+    .hobby-img {
+        width: 50%;
+        margin: 0 auto;
+    }
+    .hobby-img img {
+        width: 100%;
+    }
+    .hobby-txt {
+        width: 70%;
+        font-size: 24px;
+        margin: 0 auto;
+    }
+}
+
+/* 모바일 550px ~ 760px */
+@media screen and (max-width : 760px) {
+    .profile-txt {
+        width: 50%;
+        font-size: 16px;
+    }
+    .hobby-txt {
+        width: 50%;
+        font-size: 16px;
+    }
+}
